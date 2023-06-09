@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lab7_PH31259" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowAnimationStyle">@style/ActivityAni</item>
+    </style>
+
+    <style name="Theme.Lab7_PH31259" parent="Base.Theme.Lab7_PH31259" />
+
+    <style name="ActivityAni" parent="@android:style/Animation.Activity">
+        <item name="android:activityCloseEnterAnimation">@anim/sile_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/sile_out</item>
+        <item name="android:activityOpenEnterAnimation">@anim/sile_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/sile_in</item>
+    </style>
+</resources>

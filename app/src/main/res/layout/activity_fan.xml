@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#fff"
+    tools:context=".Fan">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FAN"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/backgroud"
+        android:layout_marginBottom="60dp"/>
+
+    <ImageView
+        android:id="@+id/fan"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:rotation="60"
+        android:src="@drawable/fan" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fast_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="FAST"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:background="@drawable/backgroud"
+            android:layout_margin="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/medium_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="MEDIUM"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:background="@drawable/backgroud"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/slow_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="SLOW"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:background="@drawable/backgroud"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/off_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="off"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:background="@drawable/backgroud_off"
+        android:layout_margin="5dp"/>
+</LinearLayout>
